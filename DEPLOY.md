@@ -14,7 +14,7 @@ This repo is a fork of [Spl0itable/nosflare](https://github.com/Spl0itable/nosfl
 Cloudflare Workers Git integration supports **GitHub**, not Origin. Use the GitHub fork:
 
 1. Open [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → the existing worker serving `bitstack.app`.
-2. Note the current **Worker name** and **D1** binding (`RELAY_DATABASE` → UUID). Put that UUID into `wrangler.toml` (`database_id`) and match `name` to the existing worker.
+2. Worker name is **`bitstack-relay`**; D1 database name is **`nostr-relay`**. Put the existing D1 UUID into `wrangler.toml` (`database_id`).
 3. **Settings → Build** (or **Triggers / Git** depending on UI): disconnect the old source if linked to upstream `Spl0itable/nosflare`, then connect **`jspeigner/bitstackapp`**, branch **`main`**.
 4. Keep existing bindings: D1 `RELAY_DATABASE`, Durable Object `RELAY_WEBSOCKET`, custom domain `bitstack.app`.
 5. Deploy / save. Confirm NIP-11 shows `"version":"7.9.45"`:
