@@ -7,9 +7,9 @@ import { RelayInfo } from './types';
 // Settings below can be configured to your preferences
 
 // Pay to relay
-export const relayNpub = "npub16jdfqgazrkapk0yrqm9rdxlnys7ck39c7zmdzxtxqlmmpxg04r0sd733sv"; // Use your own npub
+export const relayNpub = "npub18kvlatq4yqn7me3ny64y7s75e2ywfnf8994edlscc4w5j650vdqqqu7uj8"; // bitstack.app
 export const PAY_TO_RELAY_ENABLED = true; // Set to false to disable pay to relay
-export const RELAY_ACCESS_PRICE_SATS = 212121; // Price in SATS for relay access
+export const RELAY_ACCESS_PRICE_SATS = 420; // Price in SATS for relay access
 
 // NIP-42 Authentication
 export const AUTH_REQUIRED = true; // Set to false to disable NIP-42 authentication requirement
@@ -17,14 +17,14 @@ export const AUTH_TIMEOUT_MS = 600000; // 10 minutes - how long the challenge is
 
 // Relay info
 export const relayInfo: RelayInfo = {
-  name: "Nosflare",
-  description: "A serverless Nostr relay through Cloudflare Worker and D1 database",
-  pubkey: "d49a9023a21dba1b3c8306ca369bf3243d8b44b8f0b6d1196607f7b0990fa8df",
-  contact: "lux@fed.wtf",
+  name: "bitstack.app",
+  description: "A paid Nostr relay by bitstack.app — 420 sats admission",
+  pubkey: "3d99feac152027ede63326aa4f43d4ca88e4cd27296b96fe18c55d496a8f6340",
+  contact: "jonathan@bitstack.app",
   supported_nips: [1, 2, 4, 5, 9, 11, 12, 13, 15, 16, 17, 20, 22, 25, 28, 33, 40, 42, 57],
-  software: "https://github.com/Spl0itable/nosflare",
+  software: "https://github.com/jspeigner/bitstackapp",
   version: "7.9.45",
-  icon: "https://raw.githubusercontent.com/Spl0itable/nosflare/main/images/flare.png",
+  icon: "https://raw.githubusercontent.com/jspeigner/bitstackapp/main/images/flare.png",
 
   // Optional fields (uncomment as needed):
   // banner: "https://example.com/banner.jpg",
@@ -75,8 +75,8 @@ export const relayInfo: RelayInfo = {
 
 // Nostr address NIP-05 verified users (for verified checkmark like username@your-relay.com)
 export const nip05Users: Record<string, string> = {
-  "Luxas": "d49a9023a21dba1b3c8306ca369bf3243d8b44b8f0b6d1196607f7b0990fa8df",
-  // ... more NIP-05 verified users
+  // Add usernames mapped to hex pubkeys, e.g.:
+  // "jonathan": "3d99feac152027ede63326aa4f43d4ca88e4cd27296b96fe18c55d496a8f6340",
 };
 
 // Anti-spam settings

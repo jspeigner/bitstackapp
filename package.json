@@ -1,5 +1,5 @@
 {
-  "name": "nosflare",
+  "name": "bitstackapp",
   "version": "7.9.45",
   "main": "worker.js",
   "type": "module",

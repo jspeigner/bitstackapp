@@ -68,20 +68,20 @@ __export(config_exports, {
   relayInfo: () => relayInfo,
   relayNpub: () => relayNpub
 });
-var relayNpub = "npub16jdfqgazrkapk0yrqm9rdxlnys7ck39c7zmdzxtxqlmmpxg04r0sd733sv";
+var relayNpub = "npub18kvlatq4yqn7me3ny64y7s75e2ywfnf8994edlscc4w5j650vdqqqu7uj8";
 var PAY_TO_RELAY_ENABLED = true;
-var RELAY_ACCESS_PRICE_SATS = 212121;
+var RELAY_ACCESS_PRICE_SATS = 420;
 var AUTH_REQUIRED = true;
 var AUTH_TIMEOUT_MS = 6e5;
 var relayInfo = {
-  name: "Nosflare",
-  description: "A serverless Nostr relay through Cloudflare Worker and D1 database",
-  pubkey: "d49a9023a21dba1b3c8306ca369bf3243d8b44b8f0b6d1196607f7b0990fa8df",
-  contact: "lux@fed.wtf",
+  name: "bitstack.app",
+  description: "A paid Nostr relay by bitstack.app \u2014 420 sats admission",
+  pubkey: "3d99feac152027ede63326aa4f43d4ca88e4cd27296b96fe18c55d496a8f6340",
+  contact: "jonathan@bitstack.app",
   supported_nips: [1, 2, 4, 5, 9, 11, 12, 13, 15, 16, 17, 20, 22, 25, 28, 33, 40, 42, 57],
-  software: "https://github.com/Spl0itable/nosflare",
+  software: "https://github.com/jspeigner/bitstackapp",
   version: "7.9.45",
-  icon: "https://raw.githubusercontent.com/Spl0itable/nosflare/main/images/flare.png",
+  icon: "https://raw.githubusercontent.com/jspeigner/bitstackapp/main/images/flare.png",
   // Optional fields (uncomment as needed):
   // banner: "https://example.com/banner.jpg",
   // privacy_policy: "https://example.com/privacy-policy.html",
@@ -124,8 +124,8 @@ var relayInfo = {
   // }
 };
 var nip05Users = {
-  "Luxas": "d49a9023a21dba1b3c8306ca369bf3243d8b44b8f0b6d1196607f7b0990fa8df"
-  // ... more NIP-05 verified users
+  // Add usernames mapped to hex pubkeys, e.g.:
+  // "jonathan": "3d99feac152027ede63326aa4f43d4ca88e4cd27296b96fe18c55d496a8f6340",
 };
 var enableAntiSpam = false;
 var enableGlobalDuplicateCheck = false;
