@@ -12,7 +12,7 @@ class_name = "RelayWebSocket"
 [[d1_databases]]
 binding = "RELAY_DATABASE"
 database_name = "nostr-relay"
-database_id = "REPLACE_WITH_EXISTING_D1_UUID"
+database_id = "3974828d-c71f-4ef4-ad22-185aecc63695"
 
 # Cron trigger for 24hr database maintenance
 [triggers]
