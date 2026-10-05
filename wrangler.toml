@@ -18,13 +18,13 @@ database_id = "3974828d-c71f-4ef4-ad22-185aecc63695"
 [triggers]
 crons = ["0 0 * * *"]
 
-# CPU limits (lower to 10 if not on paid Workers plan)
+# CPU limits — match live bitstack-relay setting (30000 ms)
 [limits]
-cpu_ms = 300000
+cpu_ms = 30000
 
-# Enable logs (off by default, but can enable)
+# Enable logs (match live worker)
 [observability.logs]
-enabled = false
+enabled = true
 
 # Durable Object migration with SQLite storage backend
 [[migrations]]
